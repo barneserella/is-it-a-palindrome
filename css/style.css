@@ -1,0 +1,15 @@
+body{
+    background-color: cadetblue;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    flex-direction: column;
+    border: 20px solid purple;
+    margin: 0 22%;
+    margin-top: 10%;
+}
