@@ -7,15 +7,19 @@ const response = document.getElementById('response');
 button.addEventListener('click', checkIfPalindrome);
 // function to check if Palindrome
 function checkIfPalindrome(){
-    const inputValue = input.value.toLowerCase();
-    const reverseInput = input.value.split('').reverse().join('').toLowerCase();
+    const inputValue = input.value.split(' ').join('').toLowerCase();
+    const reverseInput = input.value.split(' ').join('').split('').reverse().join('').toLowerCase();
     let y = inputValue; 
     let x = reverseInput;
     if(y === x){
-        response.innerText = `Your word, ${inputValue}, is a palindrome!`
+        response.innerText = `Your word, ${input.value}, is a palindrome!`
     }else{
-        response.innerText = `Sorry, ${inputValue} is not a palindrome.`
+        response.innerText = `Sorry, ${input.value} is not a palindrome.`
     }
+    console.log(y);
+    console.log(x);
 }
 // input response into DOM
+
+
 
